@@ -27,8 +27,10 @@ export default function HeroSection() {
         >
           <div className="flex text-center text-white lg:flex-1">
             <a href="#">
-              <h1 className="text-3xl font-bold">KÜFFNER.</h1>
-              <h1 className="text-sm">Consulting</h1>
+              <h1 className="text-3xl font-bold leading-none">KÜFFNER.</h1>
+              <h1 className="text-[8px] font-medium tracking-[.17em]">
+                CONSULTING
+              </h1>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -73,13 +75,15 @@ export default function HeroSection() {
                 className="-m-1.5 mb-8 p-1.5 text-center text-[#0C224A]"
               >
                 <a href="#">
-                  <h1 className="text-3xl font-bold">KÜFFNER.</h1>
-                  <h1 className="text-[11px]">Consulting</h1>
+                  <h1 className="text-3xl font-bold leading-none">KÜFFNER.</h1>
+                  <h1 className="text-[8px] font-medium tracking-[.17em]">
+                    CONSULTING
+                  </h1>
                 </a>
               </a>
               <button
                 type="button"
-                className="-m-2.5 mb-5 rounded-md p-2.5 text-gray-500"
+                className="-m-2.5 mb-6 rounded-md p-2.5 text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
