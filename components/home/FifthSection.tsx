@@ -86,7 +86,7 @@ const FifthSection = () => {
         <div className="col-span-2">
           <div className="grid gap-y-4 sm:grid-cols-2">
             {cards.map((card, idx) => (
-              <div className="relative mx-auto w-[328px] space-y-4 rounded-2xl bg-white p-5 text-[#0C224A] md:h-[230px] md:w-[355px] md:px-8">
+              <div key={idx} className="relative mx-auto w-[328px] space-y-4 rounded-2xl bg-white p-5 text-[#0C224A] md:h-[230px] md:w-[355px] md:px-8">
                 <div className="flex items-center justify-between md:items-stretch">
                   <div className="mt-1">
                     <h3 className="hidden rounded-md bg-[#0C224A] px-2 py-1 text-sm font-semibold text-white shadow-2xl sm:inline-block">
