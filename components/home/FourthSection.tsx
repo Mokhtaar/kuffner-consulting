@@ -15,10 +15,30 @@ const Features = [
     href: "#",
   },
 ];
+const images = [
+  {
+    source: "./1.png",
+  },
+  {
+    source: "./2.png",
+  },
+  {
+    source: "./3.png",
+  },
+  {
+    source: "./4.png",
+  },
+  {
+    source: "./5.png",
+  },
+  {
+    source: "./6.png",
+  },
+];
 const FourthSection = () => {
   return (
-    <div className="mx-auto mb-32 max-w-7xl px-6 sm:mt-32 lg:px-8">
-      <div className="justify-between gap-x-4 space-y-16 text-[#0C224A] sm:flex sm:space-y-0">
+    <div className="mx-auto mb-32 max-w-7xl px-6 text-[#0C224A] sm:mt-32 lg:px-8">
+      <div className="justify-between gap-x-4 space-y-16  sm:flex sm:space-y-0">
         <div>
           <div>
             <p className="w-[220px] text-2xl font-bold leading-7 tracking-tight sm:w-[500px] sm:text-4xl sm:text-[40px] sm:leading-[48.41px]">
@@ -74,6 +94,30 @@ const FourthSection = () => {
             <ChevronRightIcon className="h-4 w-4" />
           </button>
           <img src="./Group 170.png"></img>
+        </div>
+      </div>
+      <div className="mt-32">
+        <div>
+          <p className=" text-2xl font-bold leading-7 tracking-tight sm:text-4xl sm:text-[40px] sm:leading-[48.41px]">
+            Branchenkompetenzen
+          </p>
+          <p className="mt-1 text-sm font-semibold sm:text-lg sm:leading-6">
+            In diesen Branchen können wir dir helfen
+          </p>
+        </div>
+        <div
+          role="list"
+          className="grid mt-9 sm:mt-12 grid-cols-2 gap-x-2 gap-y-2 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-3"
+        >
+          {images.map((image) => (
+            <div key={image.source} className="group">
+              <img
+                src={image.source}
+                alt=""
+                className="pointer-events-none rounded-2xl object-cover group-hover:opacity-75"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
