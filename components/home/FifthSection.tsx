@@ -2,6 +2,7 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import React, { useState } from "react";
 import { PlusSmallIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
 
 const cards = [
   {
@@ -86,7 +87,10 @@ const FifthSection = () => {
         <div className="col-span-2">
           <div className="grid gap-y-4 sm:grid-cols-2">
             {cards.map((card, idx) => (
-              <div key={idx} className="relative mx-auto w-[328px] space-y-4 rounded-2xl bg-white p-5 text-[#0C224A] md:h-[230px] md:w-[355px] md:px-8">
+              <div
+                key={idx}
+                className="relative mx-auto w-[328px] space-y-4 rounded-2xl bg-white p-5 text-[#0C224A] md:h-[230px] md:w-[355px] md:px-8"
+              >
                 <div className="flex items-center justify-between md:items-stretch">
                   <div className="mt-1">
                     <h3 className="hidden rounded-md bg-[#0C224A] px-2 py-1 text-sm font-semibold text-white shadow-2xl sm:inline-block">
@@ -136,14 +140,18 @@ const FifthSection = () => {
                   </div>
                 </div>
                 {isOpen && currentCard === idx ? (
-                  <div className="space-y-4">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="space-y-4"
+                  >
                     <p className="block text-sm font-normal leading-4 md:hidden">
                       {card.description}
                     </p>
                     <h3 className="inline-block rounded-md bg-[#0C224A] px-2 py-1 text-sm font-semibold text-white shadow-2xl">
                       {card.title}
                     </h3>
-                  </div>
+                  </motion.div>
                 ) : null}
                 <p className="hidden text-sm font-normal leading-4 md:block">
                   {card.description}

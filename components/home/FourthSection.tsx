@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
+
 const Features = [
   {
     name: "Messbare Erfolge erzielen",
@@ -62,7 +63,7 @@ const FourthSection = () => {
                   <div className="flex items-center gap-x-5 text-base font-bold leading-5 underline ">
                     <img
                       className="h-5 w-5 flex-none object-cover"
-                      src="./vector.png"
+                      src="./Vector.svg"
                     />
                     {feature.name}
                   </div>
