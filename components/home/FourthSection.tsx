@@ -73,16 +73,16 @@ const FourthSection = () => {
           <div className="mt-28 hidden gap-x-10 sm:flex">
             <img
               className="h-[16.68px] w-[84.13px] object-cover"
-              src="path3953.png"
+              src="./path3953.png"
               alt="Image"
             />
             <img
-              src="Vector (1).png"
+              src="./Vector (1).png"
               className="h-[20.9px] w-[77px] object-cover"
               alt="Image"
             />
             <img
-              src="Group 36.png"
+              src="./Group 36.png"
               className="h-[19.86px] w-[177.68px] object-cover"
               alt="Image"
             />
