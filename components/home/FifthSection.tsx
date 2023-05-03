@@ -67,6 +67,7 @@ const cards = [
 const FifthSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentCard, setCurrentCard] = useState(0);
+  console.log(isOpen, currentCard);
   return (
     <div className="mx-auto px-2 pb-24 sm:px-10 sm:pb-0 md:py-24">
       <div className="grid-cols-1 gap-x-4 space-y-16 rounded-[30px] bg-[#0C224A] py-10 sm:grid sm:grid-cols-3 sm:space-y-0 sm:p-20 md:py-24">
@@ -113,15 +114,7 @@ const FifthSection = () => {
                       src={card.icon}
                       alt="Image"
                     />
-                    {!isOpen ? (
-                      <PlusSmallIcon
-                        className="h-3 w-3 text-[#0D1A2C] md:hidden"
-                        onClick={() => {
-                          setIsOpen(!isOpen);
-                          setCurrentCard(idx);
-                        }}
-                      />
-                    ) : currentCard === idx ? (
+                    {isOpen && currentCard === idx ? (
                       <XMarkIcon
                         className="h-3 w-3 text-[#0D1A2C]"
                         onClick={() => {
