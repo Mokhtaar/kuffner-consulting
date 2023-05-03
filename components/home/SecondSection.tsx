@@ -23,7 +23,7 @@ const incentives = [
 
 export default function SecondSection() {
   return (
-    <div className="mx-auto px-4 py-24 sm:px-6 lg:px-28">
+    <div className="mx-auto px-6 py-24 sm:px-6 lg:px-28">
       <div className="mx-auto max-w-xl text-[#0C224A] lg:max-w-none">
         <div className="flex items-center sm:justify-between">
           <h2 className="w-[80%] text-[25px] font-bold leading-[30.26px] tracking-tight sm:w-[40%] sm:text-[40px] sm:leading-[48.1px] ">

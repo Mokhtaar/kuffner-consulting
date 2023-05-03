@@ -58,13 +58,13 @@ const text3 = [
 
 const ThirdSection = () => {
   return (
-    <div className="px-10 py-24">
-      <div className="mx-auto h-screen overflow-y-auto rounded-[30px] bg-[#0C224A]">
-        <div className="px-4 py-24 sm:px-6 lg:px-24">
-          <div className="flex justify-between">
-            <div className="grid w-full gap-y-44">
+    <div className="px-2 py-24 sm:px-10">
+      <div className="scrollbar-dir h-screen overflow-y-auto rounded-[30px] bg-[#0C224A]">
+        <div className="py-16 sm:px-6 lg:px-24">
+          <div className="flex justify-center sm:justify-between">
+            <div className="grid gap-y-44 sm:w-full">
               {/*first section*/}
-              <div className="flex-col justify-between space-y-11 sm:space-y-0 sm:flex  sm:flex-row">
+              <div className="content-dir flex-col justify-between space-y-11 sm:flex  sm:flex-row sm:space-y-0">
                 <div>
                   <div className="mb-16 hidden text-white sm:block">
                     <h4 className="text-2xl font-semibold leading-8">
@@ -75,14 +75,23 @@ const ThirdSection = () => {
                     </h1>
                   </div>
                   <div
-                    className="h-[360px] w-[490px] rounded-[15px]"
+                    className="relative h-[170px] w-[288px] rounded-[15px] sm:h-[360px] sm:w-[490px]"
                     style={{
                       backgroundImage: `url("Rectangle 331.jpg")`,
                       // backgroundPosition: "50% 20%",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                     }}
-                  ></div>
+                  >
+                    <img
+                      className="absolute bottom-[5%] left-[5%] block h-6 w-6 cursor-pointer sm:hidden"
+                      src="./www.png"
+                    ></img>
+                    <img
+                      className="absolute bottom-[5%] left-[15%] block h-6 w-6 cursor-pointer sm:hidden"
+                      src="./linkedin.png"
+                    ></img>
+                  </div>
                   <div className="mt-1 hidden items-center sm:flex">
                     <img
                       src="Design ohne Titel-59 1.png"
@@ -95,7 +104,7 @@ const ThirdSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="mt-2 max-w-[455px] space-y-12">
+                  <div className="mt-2 max-w-[297px] space-y-12 sm:max-w-[455px]">
                     {text1.map((paragraph) => (
                       <div key={paragraph.title}>
                         <p className="inline-block rounded-[5px] bg-white px-3 py-1 text-sm font-semibold sm:text-xl">
@@ -113,7 +122,7 @@ const ThirdSection = () => {
                 </div>
               </div>
               {/*second section*/}
-              <div className="flex-col justify-between space-y-11 sm:space-y-0 sm:flex sm:flex-row">
+              <div className="content-dir flex-col justify-between space-y-11 sm:flex sm:flex-row sm:space-y-0">
                 <div>
                   <div className="mb-16 hidden text-white sm:block">
                     <h4 className="text-2xl font-semibold leading-8">
@@ -124,14 +133,23 @@ const ThirdSection = () => {
                     </h1>
                   </div>
                   <div
-                    className="h-[360px] w-[490px] rounded-[15px]"
+                    className="relative h-[170px] w-[288px] rounded-[15px] sm:h-[360px] sm:w-[490px]"
                     style={{
                       backgroundImage: `url("Rectangle 556.jpg")`,
                       backgroundPosition: "50% 25%",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                     }}
-                  ></div>
+                  >
+                    <img
+                      className="absolute bottom-[5%] left-[5%] block h-6 w-6 cursor-pointer sm:hidden"
+                      src="./www.png"
+                    ></img>
+                    <img
+                      className="absolute bottom-[5%] left-[15%] block h-6 w-6 cursor-pointer sm:hidden"
+                      src="./linkedin.png"
+                    ></img>
+                  </div>
                   <div className="mt-1 hidden items-center sm:flex">
                     <img
                       src="Design ohne Titel-59 1.png"
@@ -144,7 +162,7 @@ const ThirdSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="mt-2 max-w-[455px] space-y-12">
+                  <div className="mt-2 max-w-[297px] space-y-12 sm:max-w-[455px]">
                     {text2.map((paragraph) => (
                       <div key={paragraph.title}>
                         <p className="inline-block rounded-[5px] bg-white px-3 py-1 text-sm font-semibold sm:text-xl">
@@ -162,7 +180,7 @@ const ThirdSection = () => {
                 </div>
               </div>
               {/*third section*/}
-              <div className="flex-col justify-between space-y-11 sm:space-y-0 sm:flex sm:flex-row">
+              <div className="content-dir flex-col justify-between space-y-11 sm:flex sm:flex-row sm:space-y-0">
                 <div>
                   <div className="mb-16 hidden text-white sm:block">
                     <h4 className="text-2xl font-semibold leading-8">
@@ -173,14 +191,23 @@ const ThirdSection = () => {
                     </h1>
                   </div>
                   <div
-                    className="h-[360px] w-[490px] rounded-[15px]"
+                    className="relative h-[170px] w-[288px] rounded-[15px] sm:h-[360px] sm:w-[490px]"
                     style={{
                       backgroundImage: `url("f.jpeg")`,
                       backgroundPosition: "50% 20%",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                     }}
-                  ></div>
+                  >
+                    <img
+                      className="absolute bottom-[5%] left-[5%] block h-6 w-6 cursor-pointer sm:hidden"
+                      src="./www.png"
+                    ></img>
+                    <img
+                      className="absolute bottom-[5%] left-[15%] block h-6 w-6 cursor-pointer sm:hidden"
+                      src="./linkedin.png"
+                    ></img>
+                  </div>
                   <div className="mt-1 hidden items-center sm:flex">
                     <img
                       src="Design ohne Titel-59 1.png"
@@ -193,7 +220,7 @@ const ThirdSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="mt-2 max-w-[455px] space-y-12">
+                  <div className="mt-2 max-w-[297px] space-y-12 sm:max-w-[455px]">
                     {text3.map((paragraph) => (
                       <div key={paragraph.title}>
                         <p className="inline-block rounded-[5px] bg-white px-3 py-1 text-sm font-semibold sm:text-xl">
