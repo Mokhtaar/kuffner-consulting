@@ -1,3 +1,4 @@
+import FifthSection from "@/components/home/FifthSection";
 import FourthSection from "@/components/home/FourthSection";
 import HeroSection from "@/components/home/HeroSection";
 import SecondSection from "@/components/home/SecondSection";
@@ -10,6 +11,7 @@ export default async function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </div>
   );
 }

@@ -61,7 +61,7 @@ const FourthSection = () => {
                 <div key={feature.name} className="flex flex-col">
                   <div className="flex items-center gap-x-5 text-base font-bold leading-5 underline ">
                     <img
-                      className="h-5 w-5 flex-none object-cover "
+                      className="h-5 w-5 flex-none object-cover"
                       src="./vector.png"
                     />
                     {feature.name}
@@ -89,7 +89,7 @@ const FourthSection = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse items-center justify-between sm:flex-col sm:items-end">
-          <button className="mt-12 flex items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-5 pr-3 text-sm font-semibold text-white hover:text-gray-300 sm:mt-0">
+          <button className="mt-12 flex items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-5 pr-3 text-base md:text-lg font-semibold text-white hover:text-gray-300 sm:mt-0">
             <p>Erstgespräch vereinbaren</p>
             <ChevronRightIcon className="h-4 w-4" />
           </button>
@@ -107,7 +107,7 @@ const FourthSection = () => {
         </div>
         <div
           role="list"
-          className="grid mt-9 sm:mt-12 grid-cols-2 gap-x-2 gap-y-2 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-3"
+          className="mt-9 grid grid-cols-2 gap-x-2 gap-y-2 sm:mt-12 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-3"
         >
           {images.map((image) => (
             <div key={image.source} className="group">

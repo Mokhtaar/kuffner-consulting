@@ -29,7 +29,7 @@ export default function SecondSection() {
           <h2 className="w-[90%] text-[25px] font-bold leading-[30.26px] tracking-tight sm:w-[40%] sm:text-[40px] sm:leading-[48.1px] ">
             Die 3 häufigsten Probleme von Unternehmern
           </h2>
-          <button className="hidden items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-sm font-semibold leading-6 text-white hover:text-gray-300 lg:flex">
+          <button className="hidden items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-4 pr-2 text-lg font-semibold leading-6 text-white hover:text-gray-300 lg:flex">
             <p>Erstgespräch vereinbaren</p>
             <ChevronRightIcon className="h-4 w-4" />
           </button>
@@ -60,7 +60,7 @@ export default function SecondSection() {
             </div>
           ))}
           <div className="flex justify-center lg:hidden">
-            <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-sm font-semibold leading-6 text-white hover:text-gray-300 ">
+            <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-base font-semibold leading-6 text-white hover:text-gray-300 ">
               <p>Erstgespräch vereinbaren</p>
               <ChevronRightIcon className="h-4 w-4" />
             </button>
