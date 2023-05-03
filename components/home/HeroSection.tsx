@@ -55,7 +55,7 @@ export default function HeroSection() {
               </a>
             ))}
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-sm font-semibold leading-6 text-white shadow-2xl hover:text-gray-300">
+              <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-4 pr-2 text-sm font-semibold leading-6 text-white shadow-2xl hover:text-gray-300">
                 <p>Erstgespräch vereinbaren</p>
                 <ChevronRightIcon className="h-4 w-4" />
               </button>
@@ -156,7 +156,7 @@ export default function HeroSection() {
                 Mitarbeitergewinnung- und führung.
               </p>
               <div className="mt-10 flex justify-center sm:block">
-                <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-5 pr-3 text-sm font-semibold hover:text-gray-300">
+                <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-5 pr-3 text-sm font-semibold hover:text-gray-300">
                   <p>Erstgespräch vereinbaren</p>
                   <ChevronRightIcon className="h-4 w-4" />
                 </button>

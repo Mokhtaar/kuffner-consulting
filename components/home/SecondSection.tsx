@@ -26,7 +26,7 @@ export default function SecondSection() {
     <div className="mx-auto px-6 py-24 sm:px-6 lg:px-28">
       <div className="mx-auto max-w-xl text-[#0C224A] lg:max-w-none">
         <div className="flex items-center sm:justify-between">
-          <h2 className="w-[80%] text-[25px] font-bold leading-[30.26px] tracking-tight sm:w-[40%] sm:text-[40px] sm:leading-[48.1px] ">
+          <h2 className="w-[90%] text-[25px] font-bold leading-[30.26px] tracking-tight sm:w-[40%] sm:text-[40px] sm:leading-[48.1px] ">
             Die 3 häufigsten Probleme von Unternehmern
           </h2>
           <button className="hidden items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-sm font-semibold leading-6 text-white hover:text-gray-300 lg:flex">
