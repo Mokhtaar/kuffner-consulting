@@ -64,7 +64,7 @@ const ThirdSection = () => {
           <div className="flex justify-between">
             <div className="grid w-full gap-y-44">
               {/*first section*/}
-              <div className="flex-col justify-between space-y-11 sm:flex  sm:flex-row">
+              <div className="flex-col justify-between space-y-11 sm:space-y-0 sm:flex  sm:flex-row">
                 <div>
                   <div className="mb-16 hidden text-white sm:block">
                     <h4 className="text-2xl font-semibold leading-8">
@@ -113,7 +113,7 @@ const ThirdSection = () => {
                 </div>
               </div>
               {/*second section*/}
-              <div className="flex-col justify-between space-y-11 sm:flex sm:flex-row">
+              <div className="flex-col justify-between space-y-11 sm:space-y-0 sm:flex sm:flex-row">
                 <div>
                   <div className="mb-16 hidden text-white sm:block">
                     <h4 className="text-2xl font-semibold leading-8">
@@ -162,7 +162,7 @@ const ThirdSection = () => {
                 </div>
               </div>
               {/*third section*/}
-              <div className="flex-col justify-between space-y-11 sm:flex sm:flex-row">
+              <div className="flex-col justify-between space-y-11 sm:space-y-0 sm:flex sm:flex-row">
                 <div>
                   <div className="mb-16 hidden text-white sm:block">
                     <h4 className="text-2xl font-semibold leading-8">
