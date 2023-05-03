@@ -26,8 +26,10 @@ export default function HeroSection() {
         >
           <div className="flex text-center text-white lg:flex-1">
             <a href="#">
-              <h1 className="text-3xl font-bold leading-none">KÜFFNER.</h1>
-              <h1 className="text-[8px] font-medium tracking-[.17em]">
+              <h1 className="text-2xl font-extrabold leading-none sm:text-3xl">
+                KÜFFNER.
+              </h1>
+              <h1 className="text-[8px] font-medium tracking-[.17em] sm:text-[10px]">
                 CONSULTING
               </h1>
             </a>
@@ -47,13 +49,13 @@ export default function HeroSection() {
               <a
                 key={item.name}
                 href={item.href}
-                className=" text-[12px] font-semibold leading-6 text-white hover:text-gray-200"
+                className="text-sm font-semibold leading-6 text-white hover:text-gray-200"
               >
                 {item.name}
               </a>
             ))}
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-1 pl-4 pr-2 text-sm font-semibold leading-6 text-white hover:text-gray-300">
+              <button className="flex items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-sm font-semibold leading-6 text-white shadow-2xl hover:text-gray-300">
                 <p>Erstgespräch vereinbaren</p>
                 <ChevronRightIcon className="h-4 w-4" />
               </button>
@@ -74,7 +76,9 @@ export default function HeroSection() {
                 className="-m-1.5 mb-8 p-1.5 text-center text-[#0C224A]"
               >
                 <a href="#">
-                  <h1 className="text-3xl font-bold leading-none">KÜFFNER.</h1>
+                  <h1 className="text-2xl font-extrabold leading-none">
+                    KÜFFNER.
+                  </h1>
                   <h1 className="text-[8px] font-medium tracking-[.17em]">
                     CONSULTING
                   </h1>
@@ -96,18 +100,18 @@ export default function HeroSection() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#0C224A] hover:text-gray-400"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-3xl font-bold text-[#0C224A] hover:text-gray-400"
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-                <div className="pt-6 text-[#0C224A]">
-                  <p className="mb-4 w-48 text-[12px]">
+                <div className="pt-6 text-xs font-semibold text-[#0C224A]">
+                  <p className="mb-4 w-52">
                     Küffner consulting ist eine Marke der
                     <span className="ml-[4px] underline">Küffner Group</span>
                   </p>
-                  <p className="w-48 text-[12px]">
+                  <p className="w-48 ">
                     © 2023 COPYRIGHT. <br /> IMPRESSUM DATENSCHUTZ
                   </p>
                 </div>
@@ -117,27 +121,34 @@ export default function HeroSection() {
         </Dialog>
       </header>
 
-      <div className="relative isolate overflow-hidden pt-14">
-        <div className="">
-          <img
-            src="./HeroImg.png"
-            alt=""
-            className="absolute inset-0 -z-10 h-full w-full object-cover object-right"
-          />
+      <div className="relative isolate pt-14">
+        <div className="absolute inset-0 -z-10">
+          <picture className="h-screen">
+            <source media="(min-width: 1024px)" srcSet="./HeroImg.png" />
+            <source
+              media="(min-width: 768px)"
+              srcSet="./Background Consulting Page tab.png"
+            />
+            <img
+              src="./Background Consulting Page (1).png"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </picture>
         </div>
 
-        <div className="p-6 py-32 sm:py-48 lg:px-28 lg:pb-20 lg:pt-36">
+        <div className="mt-20 flex flex-col justify-center py-32 sm:mt-0 sm:block sm:min-h-screen sm:py-48 lg:px-28">
           <div className="max-w-lg">
             <div className="flex items-center justify-center sm:block">
-              <p className="text-lg text-white">
+              <p className="text-base text-white sm:text-lg">
                 Unternehmer-und Unternehmensberatung
               </p>
             </div>
             <div className="text-center text-white sm:text-left">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+              <h1 className="text-[40px] font-bold leading-[42.41px] tracking-tight sm:text-[55px] sm:leading-[57.49px]">
                 Aus der Praxis <br /> für die Praxis
               </h1>
-              <p className="text-md mt-6">
+              <p className="mt-6 text-sm font-medium sm:text-lg">
                 Zielgerichtetes Unternehmenswachstům: <br />
                 Wir verhelfen Geschäftsführern & Gründern zu mehr
                 Vertriebserfolg, nachhaltigen Systemen & Prozessen, der
@@ -152,15 +163,18 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="mb-8 mt-12 w-full border border-gray-500 sm:mt-32"></div>
+          <div className="mx-auto mb-8 mt-12 w-[90%] border border-gray-500 sm:mt-32 sm:w-full"></div>
           <div className="flex justify-between">
             <div className="inline-flex items-center">
               <p className="inline-block text-lg text-gray-400">
                 bekannt <br /> aus
               </p>
-              <div className=" inline-block w-14 -rotate-[75deg] border border-gray-500"></div>
+              <div className="inline-block w-14 -rotate-[75deg] border border-gray-500"></div>
             </div>
-            <img src="./Group.png" className="w-[80%] object-contain"></img>
+            <img
+              src="./Group.png"
+              className="w-[80%] overflow-hidden object-contain"
+            ></img>
           </div>
         </div>
       </div>

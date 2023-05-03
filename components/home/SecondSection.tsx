@@ -26,7 +26,7 @@ export default function SecondSection() {
     <div className="mx-auto px-4 py-24 sm:px-6 lg:px-28">
       <div className="mx-auto max-w-xl text-[#0C224A] lg:max-w-none">
         <div className="flex items-center sm:justify-between">
-          <h2 className="text-2xl font-bold tracking-tight w-[80%] sm:w-[28%] ">
+          <h2 className="w-[80%] text-[25px] font-bold leading-[30.26px] tracking-tight sm:w-[40%] sm:text-[40px] sm:leading-[48.1px] ">
             Die 3 häufigsten Probleme von Unternehmern
           </h2>
           <button className="hidden items-center gap-x-2 rounded-md bg-[#0C224A] py-2 pl-4 pr-2 text-sm font-semibold leading-6 text-white hover:text-gray-300 lg:flex">
@@ -50,10 +50,12 @@ export default function SecondSection() {
                 </div>
               </div>
               <div className="mt-3 space-y-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                <h3 className="text-center text-xl font-semibold sm:text-left lg:w-56">
+                <h3 className="text-center text-[20px] font-bold sm:text-left sm:text-[25px] lg:w-72">
                   {incentive.name}
                 </h3>
-                <p className="mt-2 text-[12px]">{incentive.description}</p>
+                <p className="mt-2 text-[14px] sm:text-[16px]">
+                  {incentive.description}
+                </p>
               </div>
             </div>
           ))}
