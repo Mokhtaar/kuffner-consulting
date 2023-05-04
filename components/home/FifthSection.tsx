@@ -67,9 +67,8 @@ const cards = [
 const FifthSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentCard, setCurrentCard] = useState(0);
-  console.log(isOpen, currentCard);
   return (
-    <div className="mx-auto px-2 pb-24 sm:px-10 sm:pb-0 md:py-24">
+    <div className="mx-auto px-2 pb-24 sm:px-12 sm:pb-0 md:py-16">
       <div className="grid-cols-1 gap-x-4 space-y-16 rounded-[30px] bg-[#0C224A] py-10 sm:grid sm:grid-cols-3 sm:space-y-0 sm:p-20 md:py-24">
         <div className="mx-auto w-72 text-center md:text-left">
           <p className="mt-2 text-base font-medium leading-[20px] text-white sm:text-xl sm:leading-6">
@@ -79,7 +78,7 @@ const FifthSection = () => {
             Wo wir konkret anpacken
           </p>
           <div className="mt-16">
-            <button className="text-md hidden items-center gap-x-2 rounded-md bg-white py-3 pl-5 pr-3 font-semibold text-[#0C224A] hover:text-gray-600 sm:mt-0 sm:flex">
+            <button className="text-lg hidden items-center gap-x-2 rounded-md bg-white py-3 pl-5 pr-3 font-semibold text-[#0C224A] hover:text-gray-600 sm:mt-0 sm:flex">
               <p>Erstgespräch vereinbaren</p>
               <ChevronRightIcon className="h-4 w-4" />
             </button>

@@ -58,7 +58,7 @@ const text3 = [
 
 const ThirdSection = () => {
   return (
-    <div className="px-2 py-24 sm:px-10">
+    <div className="px-2 pt-9 pb-24 sm:px-12">
       <div className="scrollbar-dir h-screen overflow-y-auto rounded-[30px] bg-[#0C224A]">
         <div className="py-16 sm:px-6 lg:px-24">
           <div className="flex justify-center sm:justify-between">

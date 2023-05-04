@@ -1,7 +1,6 @@
 import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-
 const Features = [
   {
     name: "Messbare Erfolge erzielen",
@@ -36,13 +35,14 @@ const images = [
     source: "./6.png",
   },
 ];
+
 const FourthSection = () => {
   return (
-    <div className="mx-auto mb-32 max-w-7xl px-6 text-[#0C224A] sm:mt-32 lg:px-8">
+    <div className="mx-auto mb-32 max-w-7xl px-6 text-[#0C224A] sm:mt-11 lg:px-20">
       <div className="justify-between gap-x-4 space-y-16  sm:flex sm:space-y-0">
         <div>
           <div>
-            <p className="w-[220px] text-2xl font-bold leading-7 tracking-tight sm:w-[500px] sm:text-4xl sm:text-[40px] sm:leading-[48.41px]">
+            <p className="w-[220px] text-2xl font-bold leading-7 tracking-tight sm:w-[550px] sm:text-[40px] sm:leading-[48.41px]">
               Die Küffner Formel <br /> 5 Hebel für 60% mehr Umsatz
             </p>
             <p className="mt-2 text-sm font-semibold sm:text-lg sm:leading-6">
@@ -90,7 +90,7 @@ const FourthSection = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse items-center justify-between sm:flex-col sm:items-end">
-          <button className="mt-12 flex items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-5 pr-3 text-base md:text-lg font-semibold text-white hover:text-gray-300 sm:mt-0">
+          <button className="mt-12 flex items-center gap-x-2 rounded-md bg-[#0C224A] py-3 pl-5 pr-3 text-base font-semibold text-white hover:text-gray-300 sm:mt-0 md:text-lg">
             <p>Erstgespräch vereinbaren</p>
             <ChevronRightIcon className="h-4 w-4" />
           </button>

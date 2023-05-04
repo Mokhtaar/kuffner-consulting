@@ -2,6 +2,7 @@ import "./globals.css";
 
 import cx from "classnames";
 import { sfPro, inter } from "./fonts";
+import Footer from "@/components/layout/footer";
 
 export const metadata = {
   title: "Precedent - Building blocks for your Next.js project",
@@ -29,6 +30,7 @@ export default async function RootLayout({
         <main className="flex w-full flex-col items-center justify-center">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );
