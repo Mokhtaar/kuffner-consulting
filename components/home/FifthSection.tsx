@@ -108,7 +108,7 @@ const FifthSection = () => {
                       </h1>
                     </div>
                   </div>
-                  <div>
+                  <div className="">
                     <img
                       className="mb-4 hidden h-6 w-6 sm:h-[54px] sm:w-[54px] md:block"
                       src={card.icon}
@@ -123,7 +123,7 @@ const FifthSection = () => {
                       />
                     ) : (
                       <PlusSmallIcon
-                        className="h-3 w-3 text-[#0D1A2C]"
+                        className="block h-3 w-3 text-[#0D1A2C] md:hidden"
                         onClick={() => {
                           setIsOpen(!isOpen);
                           setCurrentCard(idx);
